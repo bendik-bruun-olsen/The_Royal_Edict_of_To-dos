@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2728954237.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-edited.png">
+    <title>To-Do</title>
+</head>
+<body>
+    <div id="gradient-overlay">
+        <header>
+            <div id="title-container">
+                <h1>The Royal Edict of To-Do's:</h1>
+            </div>
+        </header>
+        <main>
+            <form id="input-form">
+                <input type="text" id="text-input" autofocus autocomplete="off">
+                <button type="submit" id="add-btn" class="fas fa-plus-circle"></button>
+            </form>
+            <div id="options">
+                <label for="show-num" class="options-labels">Show Numbers</label>
+                <input type="checkbox" id="show-num">
+                <label for="hide-completed" class="options-labels">Hide Completed</label>
+                <input type="checkbox" id="hide-completed">
+            </div>
+            <p id="empty-list">Behold! The ledger of quests stands empty. Scribeth thy tasks, for adventure awaits!</p>
+            <div id="wrapper">
+            </div>
+        </main>
+    </div>
+</body>
+</html>

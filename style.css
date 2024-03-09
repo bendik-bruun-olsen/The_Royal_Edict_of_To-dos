@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./images/Background-seamless-royal-reduced.jpg");
+    font-size: 16px;
+    font-family: 'Eagle Lake', serif;
+}
+
+header {
+    width: fit-content;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 680px;
+    background-color: #fffef0;
+    box-shadow: inset 0 0 10px 5px #c7a984;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+#gradient-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.842), transparent);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TEXT */
+h1 {
+    color: #f7d800;
+    font-family: 'Eagle Lake', serif;
+    font-size: 40px;
+    text-shadow: 2px 2px #3f005c;
+    font-weight: 500;
+    user-select: none;
+}
+
+.item-text {
+    display: flex;
+    align-items: center;
+    max-width: 30ch;
+    overflow-wrap: break-word;
+    color: black;
+}
+
+#empty-list{
+    color:rgb(70, 70, 70);
+    font-style:italic;
+    opacity: 75%;
+    max-width: 30ch;
+    text-align: center;
+    font-family: 'Eagle Lake', serif;
+}
+
+.options-labels {
+    font-size: 14px;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* CONTAINERS */
+#title-container {
+    background: linear-gradient(to bottom, #6a009b, #4e0072);
+    padding: 30px;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 40px;
+    border-bottom: 5px double #f7d800;
+    border-left: 5px double #f7d800;
+    border-right: 5px double #f7d800;
+}
+
+#options {
+    margin-bottom: 15px;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;;
+    margin: 10px 0;
+}
+
+#text-input {
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 500px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 5px;
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+.arrows-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+/* INPUT */
+#input-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+#text-input {
+    padding-right: 40px;
+}
+
+#text-input:focus {
+    outline: 2px solid #5189eb;
+}
+
+#text-input[type="text"] {
+    font-size: 18px;
+    font-family: 'Eagle Lake', serif;
+}
+
+/* CHECKBOX */
+#show-num {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#hide-completed {
+    cursor: pointer;
+}
+
+/* BUTTONS */
+#add-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    font-size: 35px;
+    color: #3377ec;
+    right: 5px;
+}
+
+#add-btn:hover {
+    transform: scale(1.05);
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+}
+
+.remove-btn {
+    font-size: 24px;
+    color: #f44336;
+    opacity: 50%;
+    padding-top: 3px;
+}
+
+.remove-btn:hover {
+    color: #ff5a4e;
+    opacity: 100%;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.1s ease-out
+}
+
+.notChecked {
+    font-size: 24px;
+    color: gray;
+    padding-top: 3px;
+}
+
+.notChecked:hover {
+    color: #04AA6D;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.1s ease-out
+}
+
+.checked {
+    font-size: 24px;
+    color: #04AA6D;
+    cursor: pointer;
+    padding-top: 3px;
+}
+
+.checked:hover {
+    color: gray;
+    transform: scale(1.05);
+    transition: all 0.1s ease-out
+}
+
+.arrow-up {
+    font-size: 16px;
+    opacity: 25%;
+}
+
+.arrow-up:hover {
+    opacity: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.1s ease-out;
+}
+
+.arrow-down {
+    font-size:16px;
+    opacity: 25%;
+}
+
+.arrow-down:hover {
+    opacity: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.1s ease-out;
+}
