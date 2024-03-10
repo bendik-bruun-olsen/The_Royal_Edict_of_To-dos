@@ -11,7 +11,10 @@ body {
 }
 
 header {
-    width: fit-content;
+    /* width: fit-content; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 main {
@@ -55,6 +58,7 @@ h1 {
 #empty-list{
     color:rgb(70, 70, 70);
     font-style:italic;
+    font-size: 1.2rem;
     opacity: 75%;
     max-width: 30ch;
     text-align: center;
@@ -62,7 +66,7 @@ h1 {
 }
 
 .options-labels {
-    font-size: 14px;
+    font-size: 15px;
     user-select: none;
     cursor: pointer;
 }
@@ -76,10 +80,15 @@ h1 {
     border-bottom: 5px double #f7d800;
     border-left: 5px double #f7d800;
     border-right: 5px double #f7d800;
+    text-align: center;
+    max-width: 800px;
 }
 
 #options {
     margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #wrapper {
@@ -96,17 +105,12 @@ h1 {
     margin: 10px 0;
 }
 
-#text-input {
-    border-radius: 10px;
-    padding: 5px 10px;
-    width: 500px;
-}
-
 .icon-container {
     display: flex;
     gap: 5px;
     height: 100%;
     padding-bottom: 5px;
+    margin-left: 10px;
 }
 
 .arrows-container {
@@ -124,7 +128,9 @@ h1 {
 }
 
 #text-input {
-    padding-right: 40px;
+    padding: 5px 40px 5px 10px;
+    width: 500px;
+    border-radius: 10px;
 }
 
 #text-input:focus {
@@ -132,14 +138,13 @@ h1 {
 }
 
 #text-input[type="text"] {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-family: 'Eagle Lake', serif;
 }
 
 /* CHECKBOX */
 #show-num {
     cursor: pointer;
-    margin-right: 20px;
 }
 
 #hide-completed {
@@ -225,4 +230,25 @@ h1 {
     cursor: pointer;
     transform: scale(1.2);
     transition: all 0.1s ease-out;
+}
+
+/* Media queries */
+@media (max-width: 560px) { 
+    #text-input {
+        width: 400px;
+    }
+}
+@media (max-width: 460px) { 
+    #text-input {
+        width: 300px;
+    }
+    #title-container {
+        padding: 10px;
+    }
+}
+@media (max-width: 375px) { 
+    #options {
+        flex-direction: column;
+        align-items: center;
+    }
 }
